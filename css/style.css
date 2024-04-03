@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background: #00389f;
+    font-weight: 600;
+}
+
+body{
+    background: #6b2fc2;
+}
+
+.fecha{
+    max-height: 640px;
+}
+
+
+
+
+.navbar-toggler.custom-toggler {
+    background-color: gray; /* Cambia el color de fondo del botón */
+    border-color: black; /* Cambia el color del borde del botón */
+    color: gray; /* Cambia el color del texto del botón */
+}
+
+.navbar-toggler.custom-toggler:hover {
+    background-color: gray; /* Cambia el color de fondo del botón cuando se pasa el mouse sobre él */
+    border-color: black; /* Cambia el color del borde del botón cuando se pasa el mouse sobre él */
+}

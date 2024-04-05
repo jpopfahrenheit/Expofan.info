@@ -1,27 +1,28 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     background: #6b2fc2;
     overflow-y: scroll;
 }
 
-nav{
+nav {
     background: #00389f;
     font-weight: 600;
 }
 
-.fecha{
+.fecha {
     max-height: 560px;
 }
 
-h1 a{
+h1 a {
     text-decoration: none;
     color: white;
 }
 
-.card-footer{
+.card-footer {
     font-weight: bold;
     background: #00389f;
     color: white;
@@ -29,44 +30,60 @@ h1 a{
 
 
 .navbar-toggler.custom-toggler {
-    background-color: gray; /* Cambia el color de fondo del botón */
-    border-color: black; /* Cambia el color del borde del botón */
-    color: gray; /* Cambia el color del texto del botón */
+    background-color: gray;
+    /* Cambia el color de fondo del botón */
+    border-color: black;
+    /* Cambia el color del borde del botón */
+    color: gray;
+    /* Cambia el color del texto del botón */
 }
 
 .navbar-toggler.custom-toggler:hover {
-    background-color: gray; /* Cambia el color de fondo del botón cuando se pasa el mouse sobre él */
-    border-color: black; /* Cambia el color del borde del botón cuando se pasa el mouse sobre él */
+    background-color: gray;
+    /* Cambia el color de fondo del botón cuando se pasa el mouse sobre él */
+    border-color: black;
+    /* Cambia el color del borde del botón cuando se pasa el mouse sobre él */
 }
 
 .multi-column-list {
-    column-count: 3; /* Establece el número de columnas */
-    column-gap: 20px; /* Establece el espacio entre columnas */
-    list-style-type: none; /* Elimina los marcadores de lista */
-    padding: 0; /* Elimina el relleno predeterminado de la lista */
+    column-count: 3;
+    /* Establece el número de columnas */
+    column-gap: 20px;
+    /* Establece el espacio entre columnas */
+    list-style-type: none;
+    /* Elimina los marcadores de lista */
+    padding: 0;
+    /* Elimina el relleno predeterminado de la lista */
 }
 
 .multi-column-list li {
-    margin-bottom: 10px; /* Agrega un espacio entre los elementos de la lista */
+    margin-bottom: 10px;
+    /* Agrega un espacio entre los elementos de la lista */
+    color: white;
+    font-weight: 600;
+    font-size: large;
+    text-align: left;
 }
 
 /* Media query para pantallas pequeñas */
 @media (max-width: 768px) {
     .multi-column-list {
-        column-count: 2; /* Cambia a dos columnas en pantallas pequeñas */
+        column-count: 2;
+        /* Cambia a dos columnas en pantallas pequeñas */
     }
 }
 
 /* Media query para pantallas extra pequeñas */
 @media (max-width: 576px) {
     .multi-column-list {
-        column-count: 1; /* Cambia a una sola columna en pantallas extra pequeñas */
+        column-count: 1;
+        /* Cambia a una sola columna en pantallas extra pequeñas */
     }
 }
 
-.multi-column-list li a{
-color: white;
-font-weight: 600;
-font-size: large;
-text-align: left;
+.multi-column-list li a {
+    color: white;
+    font-weight: 600;
+    font-size: large;
+    text-align: left;
 }

@@ -42,3 +42,4 @@ function mostrarCountdown() {
 
 // Mostrar el contador cuando se cargue la página
 document.addEventListener('DOMContentLoaded', mostrarCountdown);
+

@@ -89,17 +89,20 @@ h1 a {
     text-align: left;
 }
 
+/* contador */
 #countdown {
     display: flex;
     justify-content: center;
 }
-.ancho{
-display: grid;
-justify-content: center;
-}
 
+.ancho{
+    display: grid;
+    width: 110px;
+    justify-content: center;
+}
 .time-container {
     display: flex;
+
 }
 
 .time-box {
@@ -120,8 +123,23 @@ justify-content: center;
 
 #days{
     color: white;
+    font-weight: 700;
 }
 
+#hours{
+    color: white;
+    font-weight: 700;
+}
+
+#minutes{
+    color: white;
+    font-weight: 700;
+}
+
+#seconds{
+    color: white;
+    font-weight: 700;
+}
 .time-number {
     font-size: 3rem;
     color: white;
@@ -135,6 +153,35 @@ justify-content: center;
     display: block;
     /* Asegura que el texto esté en una línea nueva */
 }
+
+
+
+
+
+.carrusel {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll; /* Habilita el desplazamiento horizontal */
+    overflow-y: hidden; /* Oculta la barra de desplazamiento vertical */
+}
+
+.elemento {
+    margin: 0 5px;
+    background-color: #d800ff;
+    width: auto; /* Permite que el ancho se ajuste automáticamente */
+    height: 200px; /* Establece la altura deseada */
+    max-height: 200; /* Establece la altura máxima para asegurar que las imágenes no se estiren más allá de 150px */
+    object-fit: cover; /* Ajusta la imagen para cubrir el contenedor */
+}
+
+.elemento img {
+
+    height: 200px;
+}
+
+
+
+
 
 footer{
     background: white ;

@@ -179,8 +179,98 @@ h1 a {
     height: 200px;
 }
 
+/* Mapa */
+.container {
+    position: relative;
+    width: 100%;
+    padding-top: calc(849 / 600 * 100%); /* Calcula la relación de aspecto */
+}
+
+.background-image, .overlay-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0; /* Alinea la imagen en la parte superior */
+    left: 0; /* Alinea la imagen a la izquierda */
+    object-fit: contain;
+}
+
+.overlay-image {
+    opacity: 0;
+    animation: radarAnimation 3s infinite;
+}
+
+@keyframes radarAnimation {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+.slider-frame{
+    width: 500px;
+    height: 500px;
+    margin: 10px auto;
+    overflow: hidden;    
+}
+
+.slider-frame ul{
+    display: flex;
+    padding: 0;
+    width: 1200%;
+    animation: slide 30s infinite ease-in-out;
+}
+
+.slider-frame li{
+    list-style: none;
+    width: 100%;
+}
+
+.slider-frame img{
+    width: 100%;
+}
+
+@keyframes slide{
+    0%{margin-left: 0%;}
+    4.16%{margin-left: 0%;}
+
+    8.33%{margin-left: -100%;}
+    12.5%{margin-left: -100%;}
+
+    16.66%{margin-left: -200%;}
+    20.83%{margin-left: -200%;}
+
+    25%{margin-left: -300%;}
+    29.16%{margin-left: -300%;}
+
+    33.33%{margin-left: -400%;}
+    37.5%{margin-left: -400%;}
+
+    41.66%{margin-left: -500%;}
+    45.83%{margin-left: -500%;}
+
+    50%{margin-left: -600%;}
+    54.16%{margin-left: -600%;}
+
+    58.33%{margin-left: -700%;}
+    62.5%{margin-left: -700%;}
+
+    66.66%{margin-left: -800%;}
+    70.83%{margin-left: -800%;}
+
+    75%{margin-left: -900%;}
+    79.16%{margin-left: -900%;}
+
+    83.33%{margin-left: -1000%;}
+    87.5%{margin-left: -1000%;}
+
+    91.66%{margin-left: -1100%;}
+    95.83%{margin-left: -1100%;}
 
 
+}
 
 
 footer{

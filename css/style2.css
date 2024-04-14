@@ -179,35 +179,7 @@ h1 a {
     height: 200px;
 }
 
-/* Mapa */
-.container {
-    position: relative;
-    width: 100%;
-    padding-top: calc(849 / 600 * 100%); /* Calcula la relación de aspecto */
-}
 
-.background-image, .overlay-image {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0; /* Alinea la imagen en la parte superior */
-    left: 0; /* Alinea la imagen a la izquierda */
-    object-fit: contain;
-}
-
-.overlay-image {
-    opacity: 0;
-    animation: radarAnimation 3s infinite;
-}
-
-@keyframes radarAnimation {
-    0%, 100% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
-}
 
 .slider-frame{
     width: 500px;
